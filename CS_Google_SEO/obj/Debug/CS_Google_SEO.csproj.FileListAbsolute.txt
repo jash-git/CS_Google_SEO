@@ -1,0 +1,16 @@
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\bin\Debug\CS_Google_SEO.exe
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\bin\Debug\CS_Google_SEO.pdb
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.Form1.resources
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.Properties.Resources.resources
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.csproj.GenerateResource.Cache
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.exe
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.pdb
+D:\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.exe
+D:\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.pdb
+D:\CS_Google_SEO\CS_Google_SEO\bin\Debug\CS_Google_SEO.exe
+D:\CS_Google_SEO\CS_Google_SEO\bin\Debug\CS_Google_SEO.pdb
+D:\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.csprojResolveAssemblyReference.cache
+D:\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.Form1.resources
+D:\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.Properties.Resources.resources
+D:\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.csproj.GenerateResource.Cache
+C:\Users\usernb\Desktop\CS_Google_SEO\CS_Google_SEO\obj\Debug\CS_Google_SEO.csprojResolveAssemblyReference.cache
