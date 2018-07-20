@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace CS_Google_SEO
     {
         public ArrayList m_ALUrl=new ArrayList();
         public int m_intCount;
+        public int m_intCloseCount;
         public String m_StrBuf = "";
         public Form1()
         {
@@ -34,14 +36,20 @@ namespace CS_Google_SEO
                 Navigate(m_ALUrl[i].ToString());
                 m_intCount = 0;
                 m_StrBuf = String.Format("{0}/{1}", i, m_ALUrl.Count);
+                m_intCloseCount++;
             }
             this.Text = "" + m_intCount + "sec ~ "+ m_StrBuf;
+            if(m_intCloseCount>=2)
+            {
+                this.Close();
+            }
             timer1.Enabled = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             m_intCount = 0;
+            m_intCloseCount = 0;
             m_StrBuf = "";
             StreamReader sr = new StreamReader("google_seo.txt");
             while (!sr.EndOfStream)// 每次讀取一行，直到檔尾
@@ -74,5 +82,9 @@ namespace CS_Google_SEO
             }
         }
 
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Process proc = Process.Start("CS_Google_SEO.exe");
+        }
     }
 }
