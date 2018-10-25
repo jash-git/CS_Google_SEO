@@ -39,7 +39,7 @@ namespace CS_Google_SEO
                 m_intCloseCount++;
             }
             this.Text = "" + m_intCount + "sec ~ "+ m_StrBuf;
-            if(m_intCloseCount>=2)
+            if(m_intCloseCount>=3)
             {
                 this.Close();
             }
@@ -61,6 +61,11 @@ namespace CS_Google_SEO
                 }
             }
             sr.Close();// 關閉串流
+
+            Random R = new Random();
+            int i = R.Next(0, (m_ALUrl.Count - 1));
+            Navigate(m_ALUrl[i].ToString());
+
             timer1.Enabled = true;
         }
         private void Navigate(String address)
