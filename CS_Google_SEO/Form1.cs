@@ -33,6 +33,7 @@ namespace CS_Google_SEO
             
             if (m_intCount>=300)
             {
+                Print_Screen();
                 Navigate(m_ALUrl[i].ToString());
                 m_intCount = 0;
                 m_StrBuf = String.Format("{0}/{1}", i, m_ALUrl.Count);
@@ -86,7 +87,15 @@ namespace CS_Google_SEO
                 return;
             }
         }
-
+        public void Print_Screen()
+        {
+            Bitmap myImage = new Bitmap(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height);
+            Graphics g = Graphics.FromImage(myImage);
+            g.CopyFromScreen(new Point(0, 0), new Point(0, 0), new Size(Screen.PrimaryScreen.Bounds.Width, Screen.PrimaryScreen.Bounds.Height));
+            IntPtr dc1 = g.GetHdc();
+            g.ReleaseHdc(dc1);
+            myImage.Save("screen.jpg");
+        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Process proc = Process.Start("CS_Google_SEO.exe");
